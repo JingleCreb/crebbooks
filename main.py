@@ -7,9 +7,19 @@ class Company(object):
         self.name = None
         self.number = None
         self.registered_office = None
-        self.type = None
+        self.company_type = None
+        self.registers = None
+
+class RegistersCollection(object):
+    '''A set of statutory books.'''
+    
+    def __init__(self):
+        self.shareholders = None
         self.directors = None
         self.secretaries = None
+        self.directors_interests = None
+        self.charges = None
+        self.interests_in_shares = None
 
 class Individual(object):
     '''A human.'''
